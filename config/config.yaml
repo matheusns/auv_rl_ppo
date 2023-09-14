@@ -1,6 +1,6 @@
 desistek_saga:
   episode:
-    max_offset: 15.0
+    max_offset: 40.0
     min_offset: 0.1
     timeout: 3000.0
   pose:
