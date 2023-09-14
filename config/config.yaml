@@ -1,11 +1,11 @@
 desistek_saga:
+  episode:
+    max_offset: 15.0
+    min_offset: 0.1
+    timeout: 3000.0
   ppo:
     learn:
       timesteps: 200000
-    episode:
-      max_offset: 15.0
-      min_offset: 0.1
-      timeout: 3000.0
     pose:
       init_position_range_x: [-10, 10]
       init_position_range_y: [-10, 10]
