@@ -34,6 +34,6 @@ if __name__ == "__main__":
     rospy.logdebug (f"model_name = {model_name}")
     
     ppo = PPOTrainer(timesteps, log_dir)
-    # ppo.learn()
-    # ppo.save(os.path.join(save_dir, model_name))
+    ppo.learn()
+    ppo.save(os.path.join(save_dir, model_name))
     rospy.spin()
