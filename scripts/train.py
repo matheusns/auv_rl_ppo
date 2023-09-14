@@ -21,7 +21,7 @@ class PPOTrainer:
         vec_env = self.model.get_env()
 
 if __name__ == "__main__":
-    rospy.init_node('ppo_trainer_node', anonymous=True, log_level=rospy.DEBUG)
+    rospy.init_node('ppo_trainer_node', anonymous=True, log_level=rospy.INFO)
     
     timesteps = rospy.get_param("/desistek_saga/ppo/learn/timesteps")
     log_dir = rospy.get_param("/desistek_saga/ppo/log/dir")
