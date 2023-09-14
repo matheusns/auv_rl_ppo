@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find auv_rl_gym)/launch/auv_env.launch"/>
+
+    <rosparam command="load" file="$(find auv_rl_ppo)/config/config.yaml" />
+    <node pkg="auv_rl_ppo" name="ppo_docking_node" type="train.py" output="screen">
+    </node>
+</launch>
